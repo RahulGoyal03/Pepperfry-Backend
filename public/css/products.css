@@ -1,0 +1,159 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.clip-lstbtm-cnt {
+  background-color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 4%;
+}
+
+.clip-lstbtm-cnt {
+  position: relative;
+  background: #fffcfc;
+  margin-bottom: 60px;
+}
+
+.clip-lstbtm-cnt p {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+li {
+  cursor: pointer;
+}
+
+.ul-list {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+#head-cate-flex {
+  padding-bottom: 20px;
+}
+
+#head-cate-flex > div,
+#head-clip {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+#head-clip > h4 {
+  padding-top: 140px;
+}
+
+.head-cate-card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.head-cate-card h5 {
+  margin: 0px;
+}
+
+h4 {
+  margin-bottom: 0px;
+}
+
+.sort-div {
+  display: flex;
+  height: 5vw;
+}
+
+.dash {
+  background-color: #fee;
+}
+
+.outer-spaced {
+  display: grid;
+  background-color: #f5f5f5;
+  grid-template-columns: 10% 20% 70% 5%;
+  justify-content: center;
+  grid-gap: 50px;
+  padding-bottom: 50px;
+}
+
+.main-dash-content-filter {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+
+.main-dash-content-card {
+  width: 100%;
+}
+
+.flex-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-card {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 1%;
+  margin: 2px solid black;
+  justify-content: center;
+  margin-bottom: 125px;
+}
+
+#main-card > div {
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+#main-card > div > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  overflow: hidden;
+}
+
+#main-card b:hover {
+  color: #0000cc;
+}
+
+#main-card > div > div > img {
+  cursor: pointer;
+  max-width: 350px;
+  margin: auto;
+  height: 200px;
+  transition: transform 0.2s;
+}
+
+#main-card > div > div > img:hover {
+  transform: scale(1.1);
+}
+#main-card > div > div > div span {
+  text-decoration: line-through;
+}
+
+#main-card > div > div > div a {
+  color: #f16521;
+}
+
+#main-card > div > div > div a > img {
+  fill: red;
+}
+
+input,
+span {
+  cursor: pointer;
+}
+
+.pf-col {
+  width: 98%;
+  margin: auto;
+}

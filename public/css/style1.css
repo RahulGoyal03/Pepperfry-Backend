@@ -1,0 +1,124 @@
+#body-one {
+  width: 92%;
+  margin: auto;
+  padding-top: 134px;
+  display: flex;
+  gap: 20px;
+}
+
+#body-one #slider {
+  width: 66%;
+}
+
+#body-one #offers {
+  width: 32%;
+}
+
+#offers > div {
+  box-sizing: border-box;
+}
+
+#offers div:nth-child(1) {
+  margin-bottom: 18px;
+}
+
+#body-two {
+  width: 92%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+#body-two #bank-offers {
+  display: flex;
+}
+
+#body-two #bank-offers > img {
+  width: 16%;
+  margin-right: 10px;
+}
+
+#body-three {
+  width: 92%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#body-three-a > h3 {
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+#body-three-a span {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+#body-three-b {
+  padding: 30px;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+#body-three-b h3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+#body-three-b > div > img {
+  display: inherit;
+  height: auto;
+  transform: scale(1);
+  transition: 0.5s ease-in;
+}
+
+.body-three-bc h3 {
+  font-size: 0.8rem;
+}
+
+#body-four {
+  background-color: #f3f5f7;
+}
+
+#body-four-a {
+  width: 92%;
+  margin: auto;
+  padding: 30px;
+}
+
+#body-four-a > h3 {
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+#body-four-a > span {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+#body-four-b {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5%);
+  grid-gap: 3%;
+}
+
+#body-four-b > div {
+  padding: 5px;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#body-four-b h3 {
+  margin-bottom: 2px;
+  font-size: 0.78rem;
+}
+
+#body-four-b span {
+  font-size: 0.75rem;
+  color: gray;
+}

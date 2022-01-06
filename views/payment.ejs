@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/xcthvj8eous3atuqybxm"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/payment.css" />
+  </head>
+  <body>
+    <div id="body">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="https://www.icicibank.com/managed-assets/images/offer-zone/brand-logos/pepperfry.png"
+              alt="no load"
+          /></a>
+        </div>
+        <div class="mid-nav">
+          <div class="cart-logo">
+            <div>
+              <span id="cart1" class="material-icons-outlined">
+                shopping_cart
+              </span>
+            </div>
+            <div>
+              <span id="cart2" class="material-icons-outlined">
+                shopping_cart
+              </span>
+            </div>
+            <div>
+              <span id="cart3" class="material-icons-outlined">
+                shopping_cart
+              </span>
+            </div>
+          </div>
+          <div class="cart-bottom">
+            <a href="">Cart</a>
+            <a href="">------ Delivery & Billing Address</a>
+            <a href=""> ------ Payment</a>
+          </div>
+        </div>
+        <div class="right-nav">
+          <span id="user-name">WELCOME Bala Murugan</span
+          ><span class="material-icons-outlined"> notifications </span>
+        </div>
+      </div>
+      <hr class="hr" />
+
+      <!-- ******************************* order summery  ******************************************** -->
+
+      <div class="mid-page">
+        <div class="left-side">
+          <div class="order-summary">
+            <p>ORDER SUMMARY</p>
+            <p>(<span id="count_prod"></span> Items)</p>
+            <button><span class="material-icons-outlined"> add </span></button>
+          </div>
+          <!-- ************* -->
+          <div class="shipping">
+            <p class="shipping-p">SHIPPING & BILLING DETAILS</p>
+            <p>Tell Us Where To Deliver</p>
+            <button id="plus-minus2">
+              <span class="material-icons-outlined"> add </span>
+            </button>
+          </div>
+
+          <div id="shipping-details" class="shipping-details">
+            <div class="shipping-address">
+              <p>SHIPPING DETAILS</p>
+              <div id="address1" class="address"></div>
+            </div>
+            <div class="billing-address">
+              <p>BILLING DETAILS</p>
+              <div id="address2" class="address"></div>
+            </div>
+          </div>
+
+          <!-- *******  Payment   ****** -->
+
+          <div class="payment shipping">
+            <p class="payment-p">PAYMENT</p>
+            <p>How would you like to pay</p>
+            <button
+              id="plus-minus3"
+              onclick="hide_and_seek('plus-minus3','payment-method')"
+            >
+              <span class="material-icons-outlined"> add </span>
+            </button>
+          </div>
+          <div id="payment-method" class="payment-method">
+            <div><p style="font-weight: 700">SELECT PAYMENT METHOD</p></div>
+
+            <div id="error-box">
+              <span class="material-icons-outlined"> warning_amber </span>
+            </div>
+
+            <div class="left-right">
+              <div id="leftId" class="left">
+                <div onclick="change('atmDiv')" id="atmDiv">
+                  <span class="material-icons-outlined"> credit_card </span>
+
+                  <p>ATM/DEBIT CARD</p>
+                </div>
+                <div onclick="change('cash-on-div')" id="cash-on-div">
+                  <span class="material-icons-outlined">attach_money </span>
+                  <p>CASH ON DELIVERY / PAYLATER</p>
+                </div>
+                <div onclick="change('credit-div')" id="credit-div">
+                  <span class="material-icons-outlined"> credit_score </span>
+                  <p>CREDIT CARD</p>
+                </div>
+                <div onclick="change('hai')">
+                  <span class="material-icons-outlined"> payments </span>
+                  <p>EMI</p>
+                </div>
+                <div onclick="change('internet-div')" id="internet-div">
+                  <span class="material-icons-outlined"> devices </span>
+                  <p>INTERNET BANKING</p>
+                </div>
+                <div onclick="change('hai')">
+                  <span class="material-icons-outlined"> card_giftcard </span>
+                  <p>PEPPERFRY GIFT CARD</p>
+                </div>
+                <div onclick="change('hai')">
+                  <span class="material-icons-outlined"> shop </span>
+                  <p>GOOGLE PAY/UPI</p>
+                </div>
+                <div onclick="change('hai')">
+                  <span class="material-icons-outlined">
+                    account_balance_wallet
+                  </span>
+                  <p>WALLET</p>
+                </div>
+                <div onclick="change('hai')">
+                  <span class="material-icons-outlined">card_membership </span>
+                  <p>INTERNATIONAL CARDS</p>
+                </div>
+              </div>
+              <div id="target" class="right"></div>
+            </div>
+          </div>
+        </div>
+        <div id="sticky" class="price-details">
+          <div class="cart-value">
+            <div>
+              <p>Cart Value</p>
+              <p id="total">
+                <span class="material-icons-outlined doller">
+                  currency_rupee </span
+                ><span id="cart-val">%%%</span>
+              </p>
+            </div>
+            <div>
+              <p>Delivery <span style="color: red">(FREE)</span></p>
+              <p>
+                <span class="material-icons-outlined doller">
+                  currency_rupee </span
+                >0
+              </p>
+            </div>
+            <div id="give_india_div">
+              <p>GiveIndia</p>
+              <p id="give_india">
+                <span class="material-icons-outlined doller">
+                  currency_rupee </span
+                >99
+              </p>
+            </div>
+            <hr style="border: 1px solid rgb(216, 209, 209)" />
+            <div class="total">
+              <p>Total</p>
+              <p>
+                <span class="material-icons-outlined doller">
+                  currency_rupee </span
+                ><span id="whole-total"></span>
+              </p>
+            </div>
+            <p class="tax">(inclusive of all taxes)</p>
+          </div>
+          <div>
+            <p id="no-cost-p">
+              No Cost EMI Available starting ₹ 2,017/month. EMI Starting ₹
+              570/month
+            </p>
+            <div class="checked">
+              <input
+                id="checkbox1"
+                value="yes"
+                type="checkbox"
+                onclick="checkbox()"
+              /><label
+                >Contribute Rs.99 For COVID Relief through GiveIndia</label
+              >
+            </div>
+          </div>
+          <div class="img">
+            <img src="https://i.ibb.co/dJprrB4/Capture.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="https://i.ibb.co/0r2X3Ct/Capture.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../js/payment.js"></script>

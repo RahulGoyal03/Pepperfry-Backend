@@ -1,0 +1,377 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo > a > img {
+  width: 200px;
+}
+.mid-nav {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart-logo {
+  display: flex;
+  flex-direction: row;
+}
+.mid-nav .material-icons-outlined {
+  color: red;
+  font-size: 20px;
+  display: none;
+}
+.cart-logo > div {
+  width: 90px;
+  height: 20px;
+  padding-left: 4px;
+}
+#cart3 {
+  display: block;
+  margin-left: 45px;
+}
+.cart-bottom {
+  width: 300px;
+}
+.cart-bottom > a {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: red;
+  text-decoration: none;
+}
+.cart-bottom > a:nth-child(3) {
+  font-weight: 700;
+}
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+  margin-left: 160px;
+}
+#user-name {
+  width: 200px;
+}
+.right-nav > span {
+  width: 30px;
+}
+.hr {
+  border: 1px solid rgb(223, 215, 215);
+}
+
+.mid-page {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.left-side {
+  border: 1px solid rgb(219, 212, 212);
+  width: 750px;
+}
+.order-summary,
+.shipping {
+  background-color: #efefef;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.order-summary > p:nth-child(2) {
+  margin-left: 460px;
+  margin-right: 10px;
+  color: #969696;
+}
+.order-summary button,
+.shipping button {
+  border: none;
+}
+.material-icons-outlined {
+  /* plus icon button*/
+  color: #969696;
+  font-size: 34px;
+  cursor: pointer;
+}
+.shipping-p {
+  margin-right: 265px;
+}
+.payment-p {
+  margin-right: 405px;
+}
+.shipping > p:nth-child(2) {
+  color: #969696;
+  margin-right: 10px;
+}
+
+.shipping-details {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.shipping-details > div {
+  width: 49%;
+  margin-left: 10px;
+}
+.address > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #969696;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#error-box {
+  border: 1px solid red;
+  width: 500px;
+  height: 27px;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 20px;
+  background-color: #fae5e8;
+  display: none;
+  margin-bottom: 20px;
+  align-items: center;
+  font-weight: 600;
+}
+#error-box > span {
+  font-size: 16px;
+  color: red;
+  margin-right: 10px;
+}
+
+.payment-method {
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+}
+.left-right {
+  display: flex;
+}
+
+.left-right > div:nth-child(1) {
+  width: 300px;
+}
+.left-right > div:nth-child(2) {
+  width: 500px;
+}
+.left > div {
+  width: 250px;
+  height: 50px;
+  background-color: #efefef;
+  margin-bottom: 1px;
+  border-left: none;
+  border-top: none;
+  border: 1px solid #dbdad9;
+  color: #969696;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.left > div > img {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
+.left > div > span {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+/* ******* dynamic change when click payment options ********  */
+
+.atm-card {
+  width: 458px;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+#credit-rupay {
+  width: 90px;
+}
+
+/* ************* */
+.bank {
+  width: 400px;
+  height: 40px;
+}
+.bank-or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 13px;
+}
+.bank-or > hr {
+  width: 350px;
+}
+/* ************* */
+.atm-card > .p {
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+}
+/* ********* custom *********** */
+.btns {
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+  gap: 30px;
+}
+.radio:hover {
+  border: 1px solid red;
+  background-color: #feefe8;
+}
+.radio {
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 50px;
+  position: relative;
+  height: 60px;
+  gap: 10px;
+}
+.radio input {
+  display: none;
+}
+.radio span {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.radio span:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #f08928;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.radio input:checked ~ span::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+/* **********  ********** */
+.proceed-topay-btn {
+  border: none;
+  width: 300px;
+  height: 45px;
+  color: white;
+  margin-top: 20px;
+  background-color: #f16521;
+}
+.atm-card > p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #969696;
+  width: 380px;
+}
+/* ***************  */
+
+/* ************************  */
+.price-details {
+  height: 450px;
+  width: 380px;
+  margin-left: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+#sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+.price-details > .img {
+  margin-top: 5px;
+}
+.cart-value {
+  border: 1px solid rgb(216, 209, 209);
+  height: 150px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.cart-value > div {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.cart-value > div > p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#give_india {
+  margin-left: 30px;
+}
+#give_india_div {
+  display: none;
+}
+.doller {
+  font-size: 12px;
+}
+.cart-value > .total {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 210px;
+}
+#no-cost-p {
+  font-size: 10px;
+  color: #4a4a4a;
+}
+.checked {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#no-cost-p + div > label {
+  font-size: 12px;
+  color: #969696;
+  font-weight: 500;
+}
+.tax {
+  margin-left: 200px;
+  color: #969696;
+  font-size: 12px;
+  font-weight: 600;
+}
+.footer {
+  background-color: #efefef;
+  padding-left: 100px;
+}

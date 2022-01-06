@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thankyou page</title>
+    <style>
+      #container {
+        width: 800px;
+        margin: auto;
+      }
+      button {
+        margin-left: 250px;
+        border: none;
+        width: 300px;
+        height: 45px;
+        color: white;
+        background-color: #f16521;
+        display: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        id="img"
+        src="https://cdn.dribbble.com/users/957410/screenshots/3226085/dribbble-gif.gif"
+        alt=""
+      />
+      <a href="/"><button id="btn">Continue Shopping</button></a>
+    </div>
+  </body>
+</html>
+<script>
+  var time = setTimeout(() => {
+    let img = document.getElementById("img");
+    img.src =
+      "https://colombocme.org/wp-content/uploads/2019/03/Paymentsuccessful21.png";
+
+    let btn = document.getElementById("btn");
+    btn.style.display = "block";
+    clearTimeout(time);
+  }, 3000);
+</script>
